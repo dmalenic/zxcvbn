@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self'; child-src 'none'; style-src 'self'; connect-src 'none'; base-uri 'self';" />
+        <meta charset = "UTF-8"/>
+        <link rel="stylesheet" href="zxcvbn.css"/>
+        <script src = "zxcvbn.js" async></script>
+    </head>
+    <body>
+        <header>Pasword complexity checker</header>
+        <article>
+            <section>
+                <div class="div_30_pct right">Please enter your password:</div>
+                <div class="div_40_pct"><input type="password" id="pwd" size="52"/></div>
+                <div class="div_30_pct"><button type="button" id="clickme">Calculate Password Complexity</button></div>
+            </section>
+            <section>
+                <div class="div_30_pct right">Password guessing complexity:</div>
+                <div class="div_70_pct"><input type="text" id="res" size="48" readonly/></div>
+            </section>
+            <section>
+                <div class="div_30_pct right">Password bits of entropy:</div>
+                <div class="div_70_pct"><input type="text" id="bits" size="48" readonly/></div>
+            </section>
+            <section>
+                <div class="div_30_pct right">Result score:</div>
+                <div class="div_70_pct"><input type="text" id="score" size="92" readonly/></div>
+            </section>
+        </article>
+        <footer>Copyright &copy; 2023 Damir Maleničić</footer>
+        <footer><a href="https://github.com/dropbox/zxcvbn">Copyright &copy; 2012-2016 Dan Wheeler and Dropbox, Inc.</a></footer>
+        <script src = "zxcvbn.html.js" async></script>
+    </body>
+</html>
